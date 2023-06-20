@@ -1,0 +1,12 @@
+﻿@model List<OrderViewModel>
+<ul>
+    @for(int i = 0 ; i < @Model.Count ; i++)
+    {
+        <li>@Model.ElementAt(i).PizzaName </li>
+        <li>@Model.ElementAt(i).UserFullName</li>
+        <li>@Model.ElementAt(i).Price</li>
+        <li>@Model.ElementAt(i).PaymentMethod </li>
+        <li>@Model.ElementAt(i).Address</li>
+    }
+
+</ul>
